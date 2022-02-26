@@ -42,7 +42,7 @@ try {
     $ccounter =0 ;
     foreach ( $commandStack as $cmd) {
 
-        printf("Step %d, command %s".PHP_EOL, ++$ccounter,   $cmd::class   );
+        printf("--- # Step %d, command %s".PHP_EOL, ++$ccounter,   $cmd::class   );
 
         $result = $worker->craftFromCommand($cmd)
                     ->execute();
